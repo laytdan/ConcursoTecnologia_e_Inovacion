@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>III Concurso de Tecnología, Innovación y Robótica Educativa</title>
+  <link rel="stylesheet" href="css_dany.css">
+</head>
+<body>
+
+<header class="cabecera">
+  <div class="banner">
+    <img src="Escudo_unimag.png" alt="Escudo UNIMAGDALENA" class="escudo">
+    <div class="texto-header">
+      <h1>III Concurso de Tecnología, Innovación y Robótica Educativa</h1>
+      <p>Universidad del Magdalena</p>
+    </div>
+  </div>
+</header>
+
+<nav class="menu">
+  <ul>
+    <li><a href="#" data-target="presentacion">Presentación</a></li>
+    <li><a href="#" data-target="objetivos">Objetivos</a></li>
+    <li><a href="#" data-target="justificacion">Justificación</a></li>
+    <li><a href="#" data-target="categorias">Categorías</a></li>
+    <li><a href="#" data-target="fases">Fases</a></li>
+    <li><a href="#" data-target="cronograma">Cronograma</a></li>
+    <li><a href="#" data-target="inscripcion">Inscripción</a></li>
+    <li><a href="#" data-target="participantes">Participantes</a></li>
+    <li><a href="#" data-target="galeria">Galería</a></li>
+  </ul>
+</nav>
+
+<button id="modoOscuro">🌙</button>
+
+<main>
+  <!-- Secciones existentes -->
+  <section id="presentacion" class="visible fade-in">
+    <h2>Presentación</h2>
+    <p>Esta actividad impulsada por la <strong>Universidad del Magdalena</strong> desde la Facultad de Ciencias de la Educación...</p>
+  </section>
+
+  <section id="objetivos">
+    <h2>Objetivos</h2>
+    <h3>General</h3>
+    <p>Promover el desarrollo de habilidades técnicas y creativas en estudiantes de diferentes niveles académicos...</p>
+    <h3>Específicos</h3>
+    <ul>
+      <li>Aplicar lo aprendido en el aula.</li>
+      <li>Desarrollar pensamiento crítico y creatividad.</li>
+      <li>Fomentar la participación tecnológica.</li>
+    </ul>
+  </section>
+
+  <section id="justificacion">
+    <h2>Justificación</h2>
+    <p>Este proyecto busca despertar el interés por las áreas STEAM...</p>
+  </section>
+
+  <section id="categorias">
+    <h2>Categorías</h2>
+    <ul>
+      <li>Transición, Primero y Segundo grado.</li>
+      <li>Tercero, Cuarto y Quinto grado.</li>
+      <li>Sexto, Séptimo y Octavo grado.</li>
+      <li>Noveno, Décimo y Undécimo grado.</li>
+      <li>Estudiantes de pregrado de la Universidad del Magdalena.</li>
+    </ul>
+  </section>
+
+  <section id="fases">
+    <h2>Fases del Concurso</h2>
+    <ol>
+      <li>Inscripción de proyectos.</li>
+      <li>Creación de videos.</li>
+      <li>Evaluación y selección.</li>
+      <li>Exposición y premiación.</li>
+    </ol>
+  </section>
+
+  <section id="cronograma">
+    <h2>Cronograma</h2>
+    <ul>
+      <li><strong>Fase 1:</strong> 5 de agosto de 2024 — Lanzamiento del concurso.</li>
+      <li><strong>Fase 2:</strong> 5 de agosto al 13 de octubre — Inscripción.</li>
+      <li><strong>Fase 3:</strong> Hasta el 18 de octubre — Publicación.</li>
+      <li><strong>Fase 4:</strong> 30 de octubre — Exhibición y premiación.</li>
+    </ul>
+  </section>
+
+  <section id="inscripcion">
+    <h2>Inscripción</h2>
+    <p>Los participantes deben diligenciar el formulario en 
+      <a href="https://forms.office.com/r/9UPeKCUMd6" target="_blank">Formulario de inscripción</a>
+    </p>
+  </section>
+
+  <!-- Sección de Participantes -->
+  <section id="participantes">
+    <h2>Listado de Participantes</h2>
+    <label for="categoriaSelect" class="label-cat">Selecciona una categoría:</label>
+    <select id="categoriaSelect" class="select-cat">
+      <option value="">-- Selecciona una categoría --</option>
+      <option value="1">Categoría 1</option>
+      <option value="2">Categoría 2</option>
+      <option value="3">Categoría 3</option>
+      <option value="4">Categoría 4</option>
+      <option value="5">Categoría 5</option>
+      <option value="6">Categoría 6</option>
+    </select>
+    <div id="tablaContenedor"></div>
+  </section>
+
+  <!-- Sección de Galería -->
+  <section id="galeria">
+  <h2>Galería de Imágenes</h2>
+  <p>Algunas fotos de los proyectos y actividades del concurso.</p>
+  <div class="grid-galeria"></div>
+</section>
+
+
+</main>
+
+<footer>
+  <p>© 2025 Universidad del Magdalena - III Concurso de Tecnología, Innovación y Robótica Educativa</p>
+</footer>
+
+<!-- Scripts -->
+<script>
+const links = document.querySelectorAll(".menu a");
+const secciones = document.querySelectorAll("main section");
+
+links.forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    const target = link.dataset.target;
+    secciones.forEach(sec => {
+      sec.classList.remove("visible", "fade-in", "slide-in", "zoom-in", "flip-in", "rotate-in");
+      if (sec.id === target) {
+        let anim = "fade-in";
+        if (sec.id === "presentacion") anim = "slide-in";
+        else if (sec.id === "objetivos") anim = "zoom-in";
+        else if (sec.id === "justificacion") anim = "flip-in";
+        else if (sec.id === "categorias") anim = "rotate-in";
+        else if (sec.id === "fases") anim = "slide-in";
+        else if (sec.id === "cronograma") anim = "zoom-in";
+        else if (sec.id === "inscripcion") anim = "fade-in";
+        else if (sec.id === "participantes") anim = "flip-in";
+        else if (sec.id === "galeria") anim = "zoom-in";
+
+        setTimeout(() => {
+          sec.classList.add("visible", anim);
+          sec.scrollIntoView({ behavior: "smooth" });
+        }, 200);
+      }
+    });
+  });
+});
+
+// Modo oscuro
+const botonModo = document.getElementById("modoOscuro");
+botonModo.addEventListener("click", () => {
+  document.body.classList.toggle("oscuro");
+  botonModo.textContent = document.body.classList.contains("oscuro") ? "☀️" : "🌙";
+});
+
+// Participantes dinámicos
+let participantes = {};
+fetch('participantes.json')
+  .then(res => res.json())
+  .then(json => participantes = json)
+  .catch(err => console.error("Error cargando participantes.json:", err));
+
+document.getElementById("categoriaSelect").addEventListener("change", function() {
+  const cat = this.value;
+  const cont = document.getElementById("tablaContenedor");
+  if (!cat || !participantes[cat]) { cont.innerHTML = ""; return; }
+  let html = `<table class="tabla-participantes"><thead><tr><th>Institución</th><th>Equipo</th><th>Resultado</th></tr></thead><tbody>`;
+  participantes[cat].forEach(row => { html += `<tr><td>${row[0]}</td><td>${row[1]}</td><td>${row[2]}</td></tr>` });
+  html += `</tbody></table>`;
+  cont.innerHTML = html;
+});
+
+// Galería dinámica
+const galeriaCont = document.querySelector(".grid-galeria");
+fetch("galeria.json")
+  .then(res => res.json())
+  .then(images => {
+    images.forEach(img => {
+      const elemento = document.createElement("img");
+      elemento.src = img.src;
+      elemento.alt = img.alt;
+      elemento.classList.add("galeria-item");
+      galeriaCont.appendChild(elemento);
+    });
+  })
+  .catch(err => console.error("Error cargando galeria.json:", err));
+</script>
+</script>
+
+</body>
+
+</html>

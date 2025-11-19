@@ -1,0 +1,72 @@
+{
+  "1": [
+    ["Colegio Americano Del Caribe", "Ingenious Minds", "1er lugar"],
+    ["San Juan Del Córdoba", "Los Triunfadores", "2do lugar"],
+    ["Howard Gardner", "Tecno Gardner", "Finalista – No asistió"]
+  ],
+  "2": [
+    ["IED Aluna", "Genios Alunista", "3er lugar"],
+    ["Colegio Howard Gardner", "Tecnorobokids", "Finalista - No asistió"],
+    ["San Juan Del Córdoba", "Los Inquebrantables", "Finalista – Asistió a Exhibición"],
+    ["Institución Educativa Departamental De La Pacha", "Los Genios De INDEPA", "Finalista - Asistió a Exhibición"],
+    ["Colegio Americano Del Caribe", "Los Drilos- Cocos", "1er lugar"],
+    ["Colegio Americano Del Caribe", "IoT Makers", "2do lugar"]
+  ],
+  "3": [
+    ["Agustín Agualongo", "Ecotech", "Finalista - No asistió"],
+    ["Tecnoacademia Itinerante Nariño", "HELIOS RobotAI", "Finalista - No asistió"],
+    ["Chapiurco", "Alquien", "Finalista - No asistió"],
+    ["Colegio Liceo Versalles", "OLED Creators", "2do lugar"],
+    ["Howard Gardner", "Los Genios De La Creación.", "Certificado de Participación"],
+    ["Instituto Mixto Corazón De María", "Innova ICM", "1er lugar"],
+    ["IED Aluna", "Reinas De La Innovación De La Tecnología", "3er lugar"]
+  ],
+  "4": [
+    ["I.E.D. Hugo J Bermúdez", "Los Tecnológicos", "Finalista - Asistió a Exhibición"],
+    ["I.E.D. Hugo J Bermúdez", "Los Ecológicos", "Certificado de Participación"],
+    ["IED Camilo Torres", "The Mimic Hand", "Certificado de Participación"],
+    ["Institución Educativa Antonio Nariño", "Tecnoacademia", "Finalista - No asistió"],
+    ["Instituto Pedagógico Gaspar Mariotti", "Los Intelectuales Del Gaspar", "Certificado de Participación"],
+    ["Institución Educativa Antonio Nariño", "Plantbot", "1er lugar"],
+    ["Institución Educativa Villa Moreno Buesaco", "Los Agroecologicos", "3er lugar"],
+    ["I.E.D. Hugo J Bermúdez", "The Laughters", "Certificado de Participación"],
+    ["I.E.D. Hugo J Bermúdez", "Las Cherries", "Certificado de Participación"],
+    ["I.E.D. Hugo J Bermúdez", "The Technological", "Certificado de Participación"],
+    ["I. E. San Juan Del Córdoba", "Lexux", "Certificado de Participación"],
+    ["I. E. San Juan Del Córdoba", "Wall-E", "Certificado de Participación"],
+    ["I. E. San Juan Del Córdoba", "Proyecto Verde", "2do lugar"],
+    ["I. E. San Juan Del Córdoba", "Equipo Pulsómetro", "Finalista - Asistió a Exhibición"],
+    ["Institución Educativa Genaro León", "Yavara Dynamics", "Finalista - No asistió"],
+    ["I. E. San Juan Del Córdoba", "Tronex", "Certificado de Participación"],
+    ["I. E. San Juan Del Córdoba", "Rendimiento 2.0", "Certificado de Participación"],
+    ["I. E. San Juan Del Córdoba", "Equipo Eva", "Certificado de Participación"],
+    ["IED Camilo Torres", "A.C", "Certificado de Participación"],
+    ["Colegio Howard Gardner", "Kinestheticcrew", "Certificado de Participación"],
+    ["IED Liceo Samario", "Probot Domo", "Certificado de Participación"],
+    ["IED Camilo Torres", "Nature", "Certificado de Participación"],
+    ["IED Camilo Torres", "Los Galácticos", "Certificado de Participación"],
+    ["Instituto Mixto Corazón De María", "Innova ICM", "Finalista - Asistió a Exhibición"],
+    ["Hugo J Bermúdez", "Cappfe", "Finalista - Asistió a Exhibición"],
+    ["I.E.D Gilma Royero Solano", "Los Innovadores", "Certificado de Participación"],
+    ["Institución Educativa Departamental De La Pacha", "El Duro De La Arduino", "Certificado de Participación"],
+    ["I.E.D Escuela Normal Superior San Pedro Alejandrino", "Biglucius", "Finalista - Asistió a Exhibición"],
+    ["I E D Aluna", "Alunaticos", "Finalista - Asistió a Exhibición"]
+  ],
+  "5": [
+    ["Lic. Informática", "Los Innovadores", "Certificado de Participación"],
+    ["Lic. Tecnología", "Simóntec", "3er lugar"],
+    ["Lic. Tecnología", "Carsline", "Certificado de Participación"],
+    ["Lic. Tecnología", "Gabriel Senior", "2do lugar"],
+    ["Lic. Tecnología", "JenCar", "1er lugar"],
+    ["Lic. Tecnología", "Tecnoatletas", "Certificado de Participación"],
+    ["Lic. Matemáticas/Lic. Tecnología", "Los Tecnomáticos Ambientalistas", "Finalista - Asistió a Exhibición"],
+    ["Ing. Electrónica/Lic. Tecnología", "Dreambots", "1er lugar"]
+  ],
+  "6": [
+    ["IED Liceo Samario", "Probot Inventor 1", "Finalista - No asistió a Reto Inventor"],
+    ["Instituto Mixto Corazón De María", "Innova ICM", "1er lugar"],
+    ["IED Liceo Samario", "Probot Inventor 2", "Finalista - No asistió a Reto Inventor"],
+    ["Colegio Franciscano De San Luis Beltrán", "Noveno", "Finalista - No asistió a Reto Inventor"],
+    ["Colegio Franciscano De San Luis Beltrán", "Décimo", "Finalista - No asistió a Reto Inventor"]
+  ]
+}

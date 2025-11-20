@@ -1,13 +1,15 @@
 [
-  {"src": "https://github.com/laytdan/ConcursoTecnologia_e_Inovacion/blob/main/imagenes/imagen1.jpg?raw=true", "alt": "Proyecto 1"},
-  {"src": "https://github.com/laytdan/ConcursoTecnologia_e_Inovacion/blob/main/imagenes/imagen2.jpg?raw=true", "alt": "Proyecto 2"},
-  {"src": "https://github.com/laytdan/ConcursoTecnologia_e_Inovacion/blob/main/imagenes/imagen3.jpg?raw=true", "alt": "Proyecto 3"},
-  {"src": "https://github.com/laytdan/ConcursoTecnologia_e_Inovacion/blob/main/imagenes/imagen4.jpg?raw=true", "alt": "Proyecto 4"},
-  {"src": "https://github.com/laytdan/ConcursoTecnologia_e_Inovacion/blob/main/imagenes/imagen5.jpg?raw=true", "alt": "Proyecto 5"},
-  {"src": "https://github.com/laytdan/ConcursoTecnologia_e_Inovacion/blob/main/imagenes/imagen6.jpg?raw=true", "alt": "Proyecto 6"},
-  {"src": "https://github.com/laytdan/ConcursoTecnologia_e_Inovacion/blob/main/imagenes/imagen7.jpg?raw=true", "alt": "Proyecto 7"},
-  {"src": "https://github.com/laytdan/ConcursoTecnologia_e_Inovacion/blob/main/imagenes/imagen8.jpg?raw=true", "alt": "Proyecto 8"}
+  {"src": "imagenes/imagen1.jpg", "alt": "Proyecto 1"},
+  {"src": "imagenes/imagen2.jpg", "alt": "Proyecto 2"},
+  {"src": "imagenes/imagen3.jpg", "alt": "Proyecto 3"},
+  {"src": "imagenes/imagen4.jpg", "alt": "Proyecto 4"},
+  {"src": "imagenes/imagen5.jpg", "alt": "Proyecto 5"},
+  {"src": "imagenes/imagen6.jpg", "alt": "Proyecto 6"},
+  {"src": "imagenes/imagen7.jpg", "alt": "Proyecto 7"},
+  {"src": "imagenes/imagen8.jpg", "alt": "Proyecto 8"}
 ]
+]
+
 
 
 

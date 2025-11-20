@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>III Concurso de Tecnología, Innovación y Robótica Educativa</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/laytdan/III-Concurso-de-tecnolog-a-/css_dany.css">
+  <link rel="stylesheet" href="css_dany.css">
 </head>
 <body>
 
 <header class="cabecera">
   <div class="banner">
-    <img src="https://cdn.jsdelivr.net/gh/laytdan/III-Concurso-de-tecnolog-a-/Escudo_unimag.png" alt="Escudo UNIMAGDALENA" class="escudo">
+    <img src="Escudo_unimag.png" alt="Escudo UNIMAGDALENA" class="escudo">
     <div class="texto-header">
       <h1>III Concurso de Tecnología, Innovación y Robótica Educativa</h1>
       <p>Universidad del Magdalena</p>
@@ -167,29 +167,50 @@ botonModo.addEventListener("click", () => {
 
 // Participantes dinámicos
 let participantes = {};
-fetch('participantes.json')
+
+fetch('https://raw.githubusercontent.com/laytdan/ConcursoTecnologia_e_Inovacion/1b1ac6ad25aae28f32befe49ca03d7b65ee5e5fd/participantes.json')
   .then(res => res.json())
   .then(json => participantes = json)
-  .catch(err => console.error("Error cargando participantes.json:", err));
+  .catch(err => console.error("Error cargando participantes.json desde GitHub:", err));
 
 document.getElementById("categoriaSelect").addEventListener("change", function() {
   const cat = this.value;
   const cont = document.getElementById("tablaContenedor");
-  if (!cat || !participantes[cat]) { cont.innerHTML = ""; return; }
-  let html = `<table class="tabla-participantes"><thead><tr><th>Institución</th><th>Equipo</th><th>Resultado</th></tr></thead><tbody>`;
-  participantes[cat].forEach(row => { html += `<tr><td>${row[0]}</td><td>${row[1]}</td><td>${row[2]}</td></tr>` });
+
+  if (!cat || !participantes[cat]) { 
+    cont.innerHTML = ""; 
+    return; 
+  }
+
+  let html = `
+    <table class="tabla-participantes">
+      <thead>
+        <tr>
+          <th>Institución</th>
+          <th>Equipo</th>
+          <th>Resultado</th>
+        </tr>
+      </thead>
+      <tbody>
+  `;
+
+  participantes[cat].forEach(row => { 
+    html += `<tr><td>${row[0]}</td><td>${row[1]}</td><td>${row[2]}</td></tr>` 
+  });
+
   html += `</tbody></table>`;
   cont.innerHTML = html;
 });
 
 // Galería dinámica
 const galeriaCont = document.querySelector(".grid-galeria");
-fetch("galeria.json")
+
+fetch("https://raw.githubusercontent.com/laytdan/ConcursoTecnologia_e_Inovacion/main/galeria.json")
   .then(res => res.json())
   .then(images => {
     images.forEach(img => {
       const elemento = document.createElement("img");
-      elemento.src = img.src;
+      elemento.src = `https://raw.githubusercontent.com/laytdan/ConcursoTecnologia_e_Inovacion/main/${img.src}`;
       elemento.alt = img.alt;
       elemento.classList.add("galeria-item");
       galeriaCont.appendChild(elemento);
@@ -197,10 +218,9 @@ fetch("galeria.json")
   })
   .catch(err => console.error("Error cargando galeria.json:", err));
 </script>
-</script>
 
 </body>
-
 </html>
+
 
 

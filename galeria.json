@@ -1,5 +1,5 @@
 [
-  {"src": "imagenes/imagen1.jpg", "alt": "Proyecto 1"},
+  {"src": "https://github.com/laytdan/ConcursoTecnologia_e_Inovacion/blob/main/imagenes/imagen1.jpg?raw=true", "alt": "Proyecto 1"},
   {"src": "imagenes/imagen2.jpg", "alt": "Proyecto 2"},
   {"src": "imagenes/imagen3.jpg", "alt": "Proyecto 3"},
   {"src": "imagenes/imagen4.jpg", "alt": "Proyecto 4"},
@@ -8,3 +8,4 @@
   {"src": "imagenes/imagen7.jpg", "alt": "Proyecto 7"},
   {"src": "imagenes/imagen8.jpg", "alt": "Proyecto 8"}
 ]
+
